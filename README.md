@@ -71,7 +71,7 @@ author5|Perth||20|false|Book's name not defined
 ## Acceptance Criteria:
 1. Program is able to load csv file, do api calls and update csv with the status
 2. Error handling
-3. Able to rerun without any problems if the file is found
+3. Able to rerun multiple times without any problems if the file is found
 4. Logging and unit tests
 
 ## Bonus Criteria:
