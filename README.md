@@ -39,16 +39,16 @@ Sample response data from GET /authors/author1/books/book11
 ## Write a Java program which reads a csv file (e.g. c:\data\authors-books.csv) with below sample data:
 
 ```
-author-name|author-location|book-name|book-price
-author1|Sydney|book11|12
-author1|Sydney|book12|23
-author2|Melbourne|book21|13
-author2|Melbourne|book22|20
-author3|Brisbane|book31|15
-author3|Brisbane|book32|18
-author3|Brisbane|book33|25
-author4||book42|25
-author5|Perth||20
+author-name,author-location,book-name,book-price
+author1,Sydney,book11,12
+author1,Sydney,book12,23
+author2,Melbourne,book21,13
+author2,Melbourne,book22,20
+author3,Brisbane,book31,15
+author3,Brisbane,book32,18
+author3,Brisbane,book33,25
+author4,,book42,25
+author5,Perth,,20
 ```
 
 
@@ -62,10 +62,10 @@ Loads file data into memory and queries api for the authors and books.
 In the end program archives the csv with datetime stamp (e.g. c:\data\authors-books-20231109-1723.csv), adding success and message fields to each row, e.g.
 
 ```
-author-name|author-location|book-name|book-price|success|message
-author1|Sydney|book11|12|true|
-author4||book42|25|false|Author's location not defined
-author5|Perth||20|false|Book's name not defined
+author-name,author-location,book-name,book-price,success,message
+author1,Sydney,book11,12,true,
+author4,,book42,25,false,Author's location not defined
+author5,Perth,,20,false,Book's name not defined
 ```
 
 ## Acceptance Criteria:
